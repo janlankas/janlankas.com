@@ -1,0 +1,243 @@
+:root {
+  --bg-black: #000100;
+  --bg-white: #ffffff;
+  --font-grey: ##878787;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+@font-face {
+  src: url(font/Pepi\ Bold.otf);
+  font-family: Pepi;
+}
+
+@font-face {
+  src: url(font/PrestigeEliteStd.otf);
+  font-family: Prestige;
+}
+@font-face {
+  src: url(font/rhesmanisa.regular.otf);
+  font-family: Rhesmanisa;
+}
+
+/* STYLING */
+
+h1 {
+  font-family: Pepi;
+  color: white;
+}
+.navbar-brand {
+  font-family: Rhesmanisa;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  padding-top: 10px;
+}
+
+.hlavicka {
+  background-color: var(--bg-black);
+  padding: 0 10rem;
+}
+
+.hlavicka a {
+  color: white;
+}
+.hlavicka a:hover {
+  color: rgb(156, 156, 156);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item {
+  font-family: Prestige;
+  color: white;
+  font-size: 1rem;
+  margin: 0 1.15rem;
+}
+
+/* ME Section */
+
+.me {
+  padding: 0 10rem;
+  background-color: #000100;
+}
+.lankas-img {
+  max-width: 85%;
+  float: right;
+}
+
+.main-nadpis {
+  font-family: Pepi;
+  font-size: 4rem;
+  color: white;
+}
+
+.main-text {
+  font-family: Prestige;
+  font-size: 1.8rem;
+
+  color: white;
+}
+
+/* ABOUT ME */
+
+.about-me {
+  padding: 0 10rem;
+}
+
+.about-header {
+  color: black;
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 3.5rem;
+}
+
+.about-text {
+  font-family: Prestige;
+  font-size: 1.3rem;
+  max-width: 75%;
+
+  color: #6b3f3f;
+  text-shadow: 0 1px 2px rgba(97, 65, 65, 48);
+}
+
+.about-contact {
+  font-family: Prestige;
+  font-size: 1.3rem;
+
+  text-shadow: 0 1px 2px rgba(97, 65, 65, 18);
+  color: #298726;
+}
+
+.skill-header {
+  font-family: Pepi;
+  font-size: 2.2rem;
+}
+.skill-text {
+  font-family: Pepi;
+  font-size: 1.3rem;
+}
+
+.answer {
+  color: #878787;
+}
+
+.skill-header-container {
+  margin: 1rem 0;
+}
+/* Portfolio  */
+.portfolio {
+  background-color: var(--bg-black);
+  padding: 0 10rem 5rem;
+}
+.portfolio-header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 3.5rem;
+}
+
+.portfolio-box {
+  height: 230px;
+  width: 230px;
+}
+
+/* Contact */
+
+.contact {
+  padding: 0 10rem 5rem;
+}
+.contact-header {
+  color: black;
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 3.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+form input,
+form textarea {
+  border: 0;
+  outline: none;
+
+  margin: 0.6rem 0;
+  padding: 1.25rem;
+
+  background: #f5f5f5;
+
+  font-size: 1rem;
+  font-family: Prestige;
+}
+
+form button {
+  font-family: Prestige;
+
+  border: 1px solid black;
+  background: white;
+
+  max-width: 30%;
+
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+}
+
+.contact-details {
+  font-family: Pepi;
+  font-size: 1.3rem;
+}
+
+.soc-icons {
+  display: inline;
+  color: black;
+}
+.soc-icons a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.soc-icons a:hover {
+  color: grey;
+}
+
+.footer {
+  background: black;
+  height: 40px;
+}
+.footer p {
+  padding: 10px;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .hlavicka,
+  .me,
+  .about-me,
+  .portfolio,
+  .contact {
+    padding: 0 1.5rem;
+  }
+
+  .lankas-img {
+    max-width: 100%;
+  }
+  .skill-header {
+    padding-left: 12px;
+  }
+
+  .details {
+    margin: 4rem 0;
+  }
+  form {
+    max-width: 100%;
+  }
+  form button {
+    max-width: 50%;
+  }
+}
