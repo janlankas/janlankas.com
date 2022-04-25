@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -50,7 +55,7 @@
 
     <!-- END OF NAVBAR -->
     <!-- ===MAIN=== -->
-    <section class="me">
+    <section id="home" class="me">
         <div class="container-fluid min-vh-100">
             <div class="row align-items-center min-vh-100">
                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -66,7 +71,7 @@
         </div>
     </section>
     <!-- ===ABOUT ME=== -->
-    <section class="about-me">
+    <section id="about" class="about-me">
         <div class="container-fluid min-vh-100">
             <h1 class="about-header ">About me</h1>
             <div class="row ">
@@ -86,8 +91,10 @@
                             Interested in the entire frontend spectrum and working
                             on ambitious projects with positive people.
                         </p>
-
-                        <p class="about-contact py-5">Let's make something together ;)</p>
+                        <div class="about-contact-box">
+                            <a class="about-contact py-5" href="mailto:lankascb@gmail.com">Let's make something together
+                                ;)</a>
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4 skill-box">
                         <p class="skill-text">Programming Languages</p>
@@ -105,26 +112,34 @@
     </section>
 
     <!-- ===PORTFOLIO === -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container-fluid ">
             <h1 class="portfolio-header">Portfolio</h1>
             <div class="row justify-content-center">
-                <div class="col-3 portfolio-box border border-primary"></div>
-                <div class="col-3 portfolio-box border border-primary"></div>
-                <div class="col-3 portfolio-box border border-primary"></div>
-                <div class="col-3 portfolio-box border border-primary"></div>
+                <div class="col-3 portfolio-box ">
+                    <a href="https://www.greensisters.sk/" target='_blank'><img class="portfolio-img" src="img/logo.png"
+                            alt=""></a>
+                </div>
+                <div class="col-3 portfolio-box ">
+                    <a class="portfolio-item" target='_blank' href="https://janlankas.github.io/days/">days.</a>
+                </div>
+                <div class="col-3 portfolio-box">
+                    <a href="https://varenijepoteseni.cz/" target='_blank'><img class="portfolio-img" src="img/tm6.png"
+                            alt=""></a>
+                </div>
+                <div class="col-3 portfolio-box"></div>
             </div>
             <div class="row my-1 justify-content-center ">
-                <div class="col-3 portfolio-box border border-primary "></div>
-                <div class="col-3 portfolio-box border border-primary "></div>
-                <div class="col-3 portfolio-box border border-primary "></div>
-                <div class="col-3 portfolio-box border border-primary "></div>
+                <div class="col-3 portfolio-box"></div>
+                <div class="col-3 portfolio-box"></div>
+                <div class="col-3 portfolio-box"></div>
+                <div class="col-3 portfolio-box"></div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section class="contact">
+    <section id='contact' class="contact">
         <div class="container-fluid">
             <h1 class="contact-header">Contact</h1>
             <div class="row">
@@ -144,9 +159,10 @@
                     <p class="contact-details">Tel. number</p>
                     <p class="contact-details answer">+420 777 676 863</p>
                     <div class="row soc-icons">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.facebook.com/jenda.lanky/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/jan-lanka%C5%A1-70bb201ab/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/janlankas"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
